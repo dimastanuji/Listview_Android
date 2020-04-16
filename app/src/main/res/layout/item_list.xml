@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:padding="6dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/atas">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/img_item_photo"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src= "@android:color/darker_gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/img_item_photo"
+            android:layout_toRightOf="@id/img_item_photo"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_namap"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text= "makanan"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:id="@+id/tv_total"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:maxLines="2"
+                android:text="total"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:id="@+id/tv_tahun"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:maxLines="2"
+                android:text="tahun"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:id="@+id/tv_detail"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:maxLines="2"
+        android:layout_toEndOf="@id/atas"
+        android:text="detail"/>
+
+</LinearLayout>
